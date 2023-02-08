@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(woodTimer.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+.timer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 51.8%;
+    left: 63%;
+    
+}
+.times{
+    font-size: 50px;
+    transform: rotate(-3deg);
+    transform-origin: bottom;
+    font-family: fantasy;
+
+}
+.hours, .minutes, .seconds, .doubledot{
+    text-shadow: 50px 5px  2px rgb(29, 29, 29);
+    color: rgba(249, 249, 249, 0.906);
+}
+.hours, .hoursdoubledot{
+    display: none;
+}
+.buttons{
+    letter-spacing: 20px;
+}
+.buttons > button{
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    color: rgba(249, 249, 249, 0.906);
+    text-shadow: 15px -10px 2px black ;
+    padding: 0px 20px;
+
+}
+.start{
+    display: inline-block;
+}
+.resume{
+    display: none;
+}
+.countdown{
+    margin-top:50px;
+}
+.countdown-btn{
+    font-size: 25px;
+    padding: 3px 8px;
+    border-top-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    box-shadow: 5px -10px 20px 5px rgb(66, 65, 65);
+}
